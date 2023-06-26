@@ -1,0 +1,43 @@
+/*
+MAIN CSS
+
+En este archivo se definiran los colores a modo de paleta
+
+*/
+
+:root {
+    --white: #FFFFFF;
+    --color_background_1: #2a2a2a;
+    --color_background_2: #3b3b3b;
+    --color_font: #e3e3e3;
+    --color_1: #89D0C6;
+    --color_2: #3CD3AD;
+    --color_3: #0044FF;
+    --color_4: #00AEE0;
+    --color_5:#4E4376;
+    --color_6:#2B5876;
+    --color_7:#FF0000;
+    --color_8:#840101;
+
+    --redondeado:5px;
+}
+/*
+:root {
+    --white: #FFFFFF;
+    --color_background_1: #2a2a2a;
+    --color_background_2: #3b3b3b;
+    --color_font: #e3e3e3;
+    --main_color_1: #89D0C6;
+    --main_color_2: #3a6458;
+    --secondary_color_1: #C8E6C9;
+    --secondary_color_2: #A3D8F4;
+
+    --redondeado:5px;
+}
+
+*/
+
+
+
+
+

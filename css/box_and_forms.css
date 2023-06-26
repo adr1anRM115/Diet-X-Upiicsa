@@ -1,0 +1,145 @@
+.form_in_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.box {
+    background-color: var(--color_background_1);
+    border-radius: var(--redondeado);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 80%);
+    padding: 5px;
+}
+
+
+/*
+■ Formularios
+*/
+
+.form_clasic {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+
+.form_clasic input {
+    border: none;
+    border-bottom: 0.5px solid var(--color_font);
+    outline: none;
+    margin-bottom: 10px;
+    background-color: var(--color_background_1);
+    color: var(--color_font);
+    font-size: 14px;
+}
+
+.form_clasic input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px var(--color_background_1) inset; /* Establecer el color de fondo deseado */
+    -webkit-text-fill-color: var(--color_font); /* Establecer el color de texto deseado */
+}
+
+.form_clasic input[type="submit"],input[type="button"] {
+    margin-top: 20px;
+    border-radius: var(--redondeado);
+    background: linear-gradient(to right, var(--color_5), var(--color_6));
+    border: none;
+    transition: box-shadow 0.5s;
+}
+
+.form_clasic input[type="submit"],input[type="button"]:hover {
+
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 0 10px 10px transparent inset;
+}
+
+
+
+.form_clasic label {
+    font-size: 12px;
+}
+
+
+/*Para cuando tienes iconos*/
+.input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container .input-with-icon {
+    padding-right: 40px;
+}
+
+.input-container .material-icons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /*Tamaño de los iconos*/
+}
+
+
+/*Tamaño para login y sig in*/
+.form_in_center .form_clasic {
+    width: 400px;
+}
+
+.form_in_center .form_clasic input {
+    height: 35px;
+    font-size: 16px;
+}
+
+.form_in_center .form_clasic input[type="submit"] {
+    height: 40px;
+}
+
+/*---------------------------------------*/
+/*Tamaño para pop ups*/
+.form_pop_up .form_clasic input {
+    height: 20px;
+}
+
+
+/*-----------------
+■ Botonoes
+
+-------------------*/
+
+.button_style_1 {
+    height: 25px;
+    border-radius: var(--redondeado);
+    border: none;
+    background: linear-gradient(to right, var(--color_1), var(--color_2));
+    transition: box-shadow 0.5s;
+}
+
+
+/*Caracteristicas:
+relleno,con sombra
+*/
+.button_style_1:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5), 0 0 10px 10px transparent inset;
+}
+
+
+/*
+Caracteristicas
+
+sin relleno, con borde e iluminacion negra
+*/
+.button_style_3 {
+    border-radius: 50px;
+    border: solid 1px var(--color_background_1);
+    height: 20px;
+    background-color: transparent;
+    color: var(--color_font);
+    transition: box-sadow 0.5s;
+}
+
+.button_style_3:hover {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+

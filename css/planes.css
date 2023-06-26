@@ -1,0 +1,141 @@
+
+.cuerpo {
+    width: 80%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plan_contenedor {
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/*
+Icons
+*/
+
+.plan_contenedor .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.plan_contenedor .icons span {
+    z-index: 1;
+    display: flex;
+
+}
+
+.plan_contenedor .icons span:before {
+    font-size: 15px;
+    font-family: "Source Sans Pro Light", sans-serif;
+    opacity: 0;
+    z-index: -1;
+
+    position: relative;
+    right: 10px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.plan_contenedor .icons .follow:before {
+    content: " Follow";
+}
+
+.plan_contenedor .icons .favorito:before {
+    content: "Favorito";
+}
+
+.plan_contenedor .icons .ocultar:before {
+    content: "Ocultar";
+}
+
+.plan_contenedor .icons .siguiendo:before {
+    content: "Siguiendo";
+}
+
+.plan_contenedor .icons .mostrar:before {
+    content: "Mostrar";
+}
+
+
+.plan_contenedor .icons span:hover:before {
+    opacity: 1;
+    transform: scalex(1);
+}
+
+.plan_contenedor .icons span {
+    margin-bottom: 5px;
+}
+
+
+/*
+Plan estilos
+*/
+.plan_contenedor .plan {
+    padding: 10px;
+    flex-grow: 0;
+    margin-right: 30px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.plan_contenedor img {
+    flex-grow: 0;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 80%);
+    border-radius: var(--redondeado);
+    max-height: 200px;
+}
+
+.plan_contenedor .nombre {
+    font-size: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-bottom: 10px;
+}
+
+.plan_contenedor .descripcion {
+    max-height: 140px;
+    overflow-y: scroll;
+    padding-right: 20px;
+
+}
+
+.like_active {
+    color: red;
+}
+
+.filtro {
+    margin: 50px auto 0 auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.filtro select{
+    height: 25px;
+    color: var(--color_font);
+    background: var(--color_background_1);
+    border-radius: var(--redondeado);
+}
+
+
+.hidden{
+    display:none;
+}
+
+.vacio{
+    font-size: 20px;
+    font-family: "Source Sans Pro Bold", sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+

@@ -1,0 +1,75 @@
+/*
+MAIN CSS
+
+En este archivo se definiran los estilos del header
+
+*/
+
+header {
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    color: var(--white);
+}
+
+.header_2do_estilo{
+    color: var(--color_font);
+    background: var(--color_background_1);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.header_2do_estilo div nav a{
+    color: var(--color_font);
+    border: solid var(--color_font) 0.5px;
+}
+
+.home {
+    font-size: 30px;
+
+}
+
+header nav {
+    width: 30%;
+    display: inline-block;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    border: solid var(--white) 0.5px;
+    padding:5px 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    z-index: 1;
+    position: relative;
+}
+
+
+header nav a:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-radius: var(--redondeado);
+    background-color: var(--color_2);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s, box-shadow 0.8s;
+
+}
+
+header nav a:hover:before {
+    opacity: 1;
+    box-shadow: 0 0 30px 5px var(--color_1);
+}
+

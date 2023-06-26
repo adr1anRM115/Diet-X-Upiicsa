@@ -1,0 +1,112 @@
+.cuerpo{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.contenido-body  {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../media/img/Ejercicio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenido-body .texto {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: White ;
+}
+
+.titulo2 {
+     margin-bottom: 10px;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: White;
+}
+.Equipo de Expertos {
+    margin-bottom: 60px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: White;
+}
+
+.subtitulo {
+    font-size: 30px;
+    color: #CCEEFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+   
+}
+
+.subtitulo::after {
+    content:"";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    top: -29px;
+   
+}
+
+.productos {
+    background: #76766D;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+    
+    
+.texto2 {
+     margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: White;
+}
+
+
+.texto3 {
+     margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: White;
+}
+
+.texto4 {
+     margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: White;
+}    
+    
+    

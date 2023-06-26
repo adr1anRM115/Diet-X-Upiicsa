@@ -1,0 +1,62 @@
+header {
+    background-color: var(--color_background_1);
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,70%),0 0 10px 2px rgba(0,0,0,50%);
+
+
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+header .titulo {
+    font-size: 30px;
+    width: 300px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    padding: 5px;
+    margin: auto 20px;
+    text-decoration: none;
+    color: var(--color_font);
+    z-index: 1;
+    position: relative;
+}
+
+header nav a:hover{
+
+}
+
+header nav a::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    right: -1px;
+
+    background: linear-gradient(to right, var(--color_7), var(--color_6));
+    z-index: -1;
+    opacity: 0;
+    height: 1px;
+    border-radius: var(--redondeado);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: opacity 500ms,transform 0.5s ease-in-out;
+}
+
+header nav a:hover:before {
+    opacity: 1;
+    transform: scaleX(1);
+}

@@ -1,0 +1,81 @@
+/*
+MAIN CSS
+
+En este archivo se definiran los estilos principales de la aplicaciónlo cuales pueden ser reutilizados en todas las paginas
+
+*/
+
+
+/*Fuentes*/
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../Fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('../Fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url('../Fonts/Source_Sans_Pro/SourceSansPro-Light.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--color_background_2);
+    color: var(--color_font);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+/*-----------
+■ Scroll
+-----------*/
+.scroll::-webkit-scrollbar {
+    width: 3px; /* Tamaño del scroll en vertical */
+    height: 3px; /* Tamaño del scroll en horizontal */
+}
+
+
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--color_5), var(--color_6));
+    border-radius: var(--redondeado);
+
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, var(--color_3), var(--color_4));
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.scroll::-webkit-scrollbar-thumb:active {
+
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.scroll::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.scroll::-webkit-scrollbar-track:hover,
+.scroll::-webkit-scrollbar-track:active {
+
+}
+
+
+
+
+
